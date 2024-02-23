@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>God of War</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    body {
+      background-image: url(bg-story.png);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+
+ 
+    .column img {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .column img:hover {
+      opacity: 1;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .container {
+      position: relative;
+      display: none;
+    }
+
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    
+
+  </style>
+  <body>
+  
+    <div class="wrapper">
+      <nav>
+        <div class="menu">
+          <div class="logo">
+            <img src="img/GodLogo.png" />
+          </div>
+
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li>
+              <div class="MobNavBtns">
+                <button>Play Now</button>
+              </div>
+            </li>
+            <li><a href="god of war.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+
+          <div class="NavBtns">
+            <li></li>
+            <button>
+              <a href="Login.html" style="text-decoration: none">LogIn</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+      
+      <div data-poster-url=""data-video-url="godofwar.webm">
+        <video playsinline="" loop="" muted="" autoplay=""style="background-image:url('');" dta-wf-ignore="true" data-object-fit="cover" height="100%" width="100%" style="border-radius: 30px;">
+        <source src="godofwar.webm" data-wf-ignore="true"></video>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="peakpx (4).jpg" alt="Nature" onclick="myFunction(this);" />
+        </div>
+        <div class="column">
+          <img src="peakpx (5).jpg" alt="Snow" onclick="myFunction(this);" />
+        </div>
+        <div class="column">
+          <img src="1304607.jpeg" alt="Snow" onclick="myFunction(this);" />
+        </div>
+        <div class="column">
+          <img src="1272529.jpg" alt="Snow" onclick="myFunction(this);" />
+        </div>
+        <div class="column">
+          <img src="1173138.jpg" alt="Snow" onclick="myFunction(this);" />
+        </div>
+        <div class="column">
+          <img src="1176271.jpg" alt="Snow" onclick="myFunction(this);" />
+        </div>
+        
+        
+        <div class="column">
+          <img
+            src="peakpx (6).jpg"
+            alt="Mountains"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img src="1153100.jpg" alt="Lights" onclick="myFunction(this);" />
+        </div>
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >&times;</span
+        >
+
+        <img id="expandedImg" style="width: 100%" />
+
+        <div id="imgtext"></div>
+      </div>
+      <h1  style="background: url(peakpx\ \(4\).jpg) 50% 50%; background-size:cover ;-webkit-text-fill-color: transparent;-webkit-background-clip: text; text-align: center;">GOD OF WAR </h1>
+   
+  
+      
+      
+  </body>
+</html>
